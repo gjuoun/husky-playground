@@ -1,0 +1,28 @@
+{
+  "name": "husky-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gjuoun/husky-playground.git"
+  },
+  "keywords": [],
+  "author": "Jun Guo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gjuoun/husky-playground/issues"
+  },
+  "homepage": "https://github.com/gjuoun/husky-playground#readme",
+  "devDependencies": {
+    "husky": "^7.0.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push" : "CI=true npm test" 
+    }
+  }
+}
